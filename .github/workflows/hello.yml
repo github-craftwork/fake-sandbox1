@@ -3,6 +3,10 @@ name: A workflow for my Hello World Action
 jobs:
   build:
     name: Hello world action
+    run: |
+      echo "hello $NAME"
+    env:
+      NAME: Mary
     runs-on: ubuntu-latest # useful environment to we can run a simple bash    
     steps:
     - name: hello-world
